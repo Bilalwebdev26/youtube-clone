@@ -1,11 +1,16 @@
-import React from 'react'
-
+import React from "react";
+import Navbar from "./Components/Navbar";
+import Sidebar from "./Components/Sidebar";
 const App = () => {
   return (
-    <div>
-      <h1 className='text-5xl'> Bilal</h1>
+    <div className="">
+      <Navbar />
+      <div className="flex">
+        <Sidebar />
+        {/* Video Render Here */}
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;
